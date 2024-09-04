@@ -19,7 +19,7 @@ export default {
         async fazAlgo() {
             console.log("fazAlgo")
             
-            let resp = await fetch("https://api.github.com/repos/mmamorim/testesite01/git/trees/main?recursive=1")
+            let resp = await fetch("https://api.github.com/repos/mmamorim/gitdoc-v3/contents")
             console.log("resp",resp);
             let json = await resp.json()
             console.log("json",json);
